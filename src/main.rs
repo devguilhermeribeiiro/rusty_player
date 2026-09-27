@@ -220,7 +220,7 @@ fn get_albums(path: String) -> Vec<String> {
 
 fn get_tracks(album: String) -> Vec<String> {
     let mut tracks = Vec::new();
-    let dir = fs::read_dir(format!("/home/guilherme/Music/{}", album));
+    let dir = fs::read_dir(format!("/home/guilherme/Musics/{}", album));
 
     match dir {
         Ok(dir) => {

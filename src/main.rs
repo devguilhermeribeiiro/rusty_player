@@ -37,7 +37,7 @@ struct DefaultList {
 
 impl Default for App {
     fn default() -> Self {
-        let albums = DefaultList::from_iter(get_albums("/home/guilherme/Music/".to_string()));
+        let albums = DefaultList::from_iter(get_albums("/home/guilherme/Musics/".to_string()));
         let tracks = DefaultList::from_iter(["Nothing selected...".to_string()].to_vec());
 
         Self {
